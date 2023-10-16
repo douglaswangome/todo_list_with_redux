@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #212121;
+  color: #fff;
+}
+
+.app .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: #424242;
+}
+
+.app .content .header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.app .content .header span.title {
+  font-family: "Mooli";
+  font-size: 48px;
+}
+
+.app .content .header div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 24px;
+}
+
+.app .content .add {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.app .content .add input {
+  flex: 1;
+}
+
+.app .content .main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 480px) {
+  .app .content {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .app .content .add {
+    flex-direction: column;
+  }
+
+  .app .content .add input {
+    width: 100%;
+  }
+}

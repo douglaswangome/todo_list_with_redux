@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Nunito+Sans:opsz@6..12&display=swap');
+
+:root {
+  font-family: "Nunito Sans";
+  font-size: 20px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 6px;
+  transition: background-color .5s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  background-color: #727272;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  height: 100%;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out
+}
+
+button:hover {
+  background-color: #727272;
+}
+
+button span {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 380px) {
+  button {
+    justify-content: center;
+    width: 100%;
+  }
+}
